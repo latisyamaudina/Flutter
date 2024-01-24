@@ -31,7 +31,7 @@ class BelajarContainer extends StatelessWidget {
       ),
 
       child: Container(
-        width: double.infinity,
+      width: double.infinity,
       height: double.infinity,
       margin: EdgeInsets.all(10),
       padding: EdgeInsets.all(10),
@@ -43,7 +43,7 @@ class BelajarContainer extends StatelessWidget {
       ),
 
       child: Container(
-        width: double.infinity,
+      width: double.infinity,
       height: double.infinity,
       margin: EdgeInsets.all(10),
       padding: EdgeInsets.all(10),
