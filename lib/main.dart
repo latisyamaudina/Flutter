@@ -13,6 +13,12 @@ import 'package:belajar/listview/list_builder.dart';
 import 'package:belajar/listview/list_separated.dart';
 import 'package:belajar/row_column.dart';
 import 'package:belajar/row_widget.dart';
+import 'package:belajar/screens/detail_nature_screen.dart';
+import 'package:belajar/screens/home_screen.dart';
+import 'package:belajar/screens/input_form_screen.dart';
+import 'package:belajar/screens/list_screen.dart';
+import 'package:belajar/screens/menu_screen.dart';
+import 'package:belajar/screens/second_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -27,21 +33,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Ini Project Flutter Pertamaku",
-      home: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          backgroundColor: Colors.black,
-          title: Text(
-            "Belajar Flutter",
-            style:TextStyle(backgroundColor: Colors.white),
-          ),
-        ),
-        body: LatihanGridView(),
-        ),
+      // home: HomeScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => NavigationMenu(),
+        'second': (context) => ListNatureScreen(),
+        'third': (context) => BelajarForm()
+      },
     );
   }
 }
-
 class TextWidget extends StatelessWidget {
   const TextWidget({
     super.key,
